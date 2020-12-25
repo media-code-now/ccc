@@ -21,6 +21,7 @@
   /* WebKit, Blink, Edge */
   color: #777777;
   font-weight: 300;
+  font-size: 1.5em;
 }
 
 :-moz-placeholder {
@@ -52,7 +53,7 @@
 body {
   color: #777777;
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.625em;
   position: relative;
@@ -108,7 +109,7 @@ a, a:focus, a:hover {
  *
  **/
 .btn i, .btn-large i, .btn-floating i, .btn-large i, .btn-flat i {
-  font-size: 1em;
+  font-size: 1.5em;
   line-height: inherit;
 }
 
@@ -148,15 +149,15 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 h5, .h5 {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 h6, .h6 {
-  font-size: 14px;
+  font-size: 16px;
   color: #222222;
 }
 
@@ -580,6 +581,11 @@ td, th {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+
+.page-area  {
+  height: 30vh;
+}
+
 
 .section-full {
   padding: 100px 0;
@@ -1367,7 +1373,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: #fab700;
+  background: #6382e6;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -1450,7 +1456,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .primary-switch input:checked + label:before {
-  background: #fab700;
+  background: #6382e6;
 }
 
 .confirm-switch {
@@ -1799,12 +1805,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .default-select .nice-select .list .option.selected {
-  color: #fab700;
+  color: #6382e6;
   background: transparent;
 }
 
 .default-select .nice-select .list .option:hover {
-  color: #fab700;
+  color: #6382e6;
   background: transparent;
 }
 
@@ -1854,7 +1860,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-select .nice-select .list .option.selected {
-  color: #fab700;
+  color: #6382e6;
   background: transparent;
 }
 
@@ -1908,7 +1914,7 @@ h1, h2, h3, h4, h5, h6 {
 #header #logo h1 a, #header #logo h1 a:hover {
   color: #fff;
   padding-left: 10px;
-  border-left: 4px solid #fab700;
+  border-left: 4px solid #6382e6;
 }
 
 #header #logo img {
@@ -2009,7 +2015,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   color: #fff;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 18px;
   text-transform: uppercase;
   outline: none;
 }
@@ -2038,12 +2044,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #333;
   transition: 0.3s;
   display: block;
-  font-size: 12px;
+  font-size: 18px;
   text-transform: none;
 }
 
 .nav-menu ul li:hover > a {
-  color: #fab700;
+  color: #6382e6;
 }
 
 .nav-menu ul ul {
@@ -2105,7 +2111,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #mobile-nav ul li a {
   color: #fff;
-  font-size: 13px;
+  font-size: 16px;
   text-transform: uppercase;
   overflow: hidden;
   padding: 10px 22px 10px 15px;
@@ -2135,7 +2141,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #fab700;
+  color: #6382e6;
 }
 
 #mobile-nav ul .menu-has-children li a {
@@ -2143,7 +2149,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #mobile-nav ul .menu-item-active {
-  color: #fab700;
+  color: #6382e6;
 }
 
 #mobile-body-overly {
@@ -2194,7 +2200,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .primary-btn {
-  background-color: #fab700;
+  background-color: #1614A5;
   line-height: 42px;
   padding-left: 30px;
   padding-right: 60px;
@@ -2249,11 +2255,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .primary-btn.white:hover {
   background: #fff;
-  color: #fab700;
+  color: #1614A5;
 }
 
 .primary-btn.white:hover span {
-  color: #fab700;
+  color: #1614A5;
 }
 
 .overlay {
@@ -2269,8 +2275,13 @@ body.mobile-nav-active #mobile-nav-toggle {
     height: 700px !important;
   }
 }
+@media (max-width: 767.98px) {
+  .page-area .thirdscreen {
+    height: 30vh !important;
+  }
+}
 
-.banner-area .overlay {
+.banner-area, .generic-banner .overlay {
   background: #000;
   opacity: .65;
 }
@@ -2283,8 +2294,20 @@ body.mobile-nav-active #mobile-nav-toggle {
 .banner-content {
   text-align: center;
 }
+.page-area .overlay {
+  background: #000;
+  opacity: .65;
+}
+.page-area .overlay {
+  height: 30vh;
+}
 
-.banner-content h1 {
+
+.banner-content {
+  text-align: center;
+}
+
+.banner-content h1 ,h2 {
   color: #fff;
   font-size: 72px;
   font-weight: 700;
@@ -2293,12 +2316,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
 }
 
-.banner-content h1 span {
+.banner-content h1 ,h2 span {
   font-weight: 700;
 }
 
 @media (max-width: 991.98px) {
-  .banner-content h1 {
+  .banner-content h1  {
     font-size: 36px;
   }
 }
@@ -2327,7 +2350,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .header-btn {
-  background-color: #fab700;
+  background-color: #1614A5;
   border: 1px solid transparent;
   color: #fff;
 }
@@ -2360,11 +2383,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .single-offered:hover {
   cursor: pointer;
-  background-color: #fab700;
+  background-color: #6382e6;
 }
 
-.single-offered:hover p {
-  color: #222;
+.single-offered:hover p  {
+  color: rgb(255, 255, 255);
+}
+.single-offered:hover h4  {
+  color: rgb(255, 255, 255);
 }
 
 @media (max-width: 800px) {
@@ -2392,7 +2418,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .projects-area .single-project .overlay-content {
-  background-color: #fab700;
+  background-color: #6382e6;
   opacity: .8;
   padding: 30px;
   display: -webkit-box;
@@ -2421,7 +2447,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .projects-area .single-project .overlay-content h1 {
-  color: #222;
+  color: #FFF;
   margin-bottom: 15px;
 }
 
@@ -2487,12 +2513,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .projects-area .owl-dots .owl-dot.active {
-  background: #fab700;
+  background: #6382e6;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 .facts-area {
-  background-color: #fab700;
+  background-color: #6382e6;
 }
 
 .single-fact h1 {
@@ -2501,7 +2527,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-fact p {
-  color: #222;
+  color: #FFF;
 }
 
 @media (max-width: 800px) {
@@ -2530,7 +2556,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .single-service:hover {
   box-shadow: -14.142px 14.142px 20px 0px rgba(157, 157, 157, 0.5);
   cursor: pointer;
-  background-color: #fab700;
+  background-color: #6382e6;
 }
 
 .single-service:hover p {
@@ -2612,7 +2638,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-testimonial h4:hover {
-  color: #fab700;
+  color: #6382e6;
   cursor: pointer;
 }
 
@@ -2727,7 +2753,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .footer-area .number {
-  color: #fab700;
+  color: #6382e6;
   font-size: 24px;
   font-weight: 600;
   line-height: 30px;
@@ -2740,11 +2766,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .footer-area .primary-btn {
-  background-color: #fab700;
+  background-color: #1614A5;
 }
 
 .footer-area .primary-btn:hover .lnr {
-  color: #fab700;
+  color: #1614A5;
 }
 
 .footer-area .footer-bottom {
@@ -2752,7 +2778,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .footer-area .footer-bottom a {
-  color: #fab700;
+  color: #1614A5;
 }
 
 .footer-area .footer-bottom .footer-social {
@@ -2770,7 +2796,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .footer-area .footer-bottom .footer-social a:hover {
-  background-color: #fab700;
+  background-color: #6382e6;
+  color: #fff;
 }
 
 .footer-area .footer-bottom .footer-social i {
@@ -2819,7 +2846,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-footer-widget .navbar-form .genric-btn:hover {
-  background-color: #fab700;
+  background-color: #6382e6;
 }
 
 .single-footer-widget .navbar-form .genric-btn:hover .lnr {
@@ -2849,6 +2876,30 @@ body.mobile-nav-active #mobile-nav-toggle {
   .generic-banner .height {
     height: 400px;
   }
+}
+#painting{
+  background: url(../img/p.jpg) center center / cover;
+}
+#flooring{
+  background: url(../img/f.jpg) center center / cover;
+}
+#bathroom{
+  background: url(../img/BH.jpg) center center / cover;
+}
+#landscape{
+  background: url(../img/l.jpg) center center / cover;
+}
+#plumbing{
+  background: url(../img/plum.jpg) center center / cover;
+}
+#roofing{
+  background: url(../img/RH.jpg) center center / cover;
+}
+#kitchen{
+  background: url(../img/KH.jpg) center center / cover;
+}
+#services{
+  background: url(../img/diy-and-home-improvement-banner-PKYLFE4.JPG) center center / cover;
 }
 
 .generic-banner .generic-banner-content h2 {
